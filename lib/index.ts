@@ -2,7 +2,7 @@ import * as hummus from 'hummus';
 import * as fs from 'fs';
 import * as _ from 'lodash';
 
-export class PDFFormsFiller {
+export default class PDFFormsFiller {
 
     private formTemplatePath: string;
     private outputFilePath: string;

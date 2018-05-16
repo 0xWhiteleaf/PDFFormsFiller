@@ -1,4 +1,4 @@
-export declare class PDFFormsFiller {
+export default class PDFFormsFiller {
     private formTemplatePath;
     private outputFilePath;
     private writer;

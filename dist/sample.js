@@ -24,7 +24,7 @@ let data = {
 };
 console.log('FormTemplateFile : ', formTemplateFilePath);
 console.log('OutputFile : ', outputFilePath);
-let pdfFormsFiller = new index_1.PDFFormsFiller(formTemplateFilePath, outputFilePath);
+let pdfFormsFiller = new index_1.default(formTemplateFilePath, outputFilePath);
 pdfFormsFiller.fillForm(data);
 console.log('Done !');
 // testing that writer is correctly reopened if needed

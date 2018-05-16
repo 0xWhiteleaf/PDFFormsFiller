@@ -499,4 +499,4 @@ class PDFFormsFiller {
         }
     }
 }
-exports.PDFFormsFiller = PDFFormsFiller;
+exports.default = PDFFormsFiller;

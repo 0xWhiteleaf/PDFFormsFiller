@@ -1,4 +1,4 @@
-import { PDFFormsFiller } from "./index";
+import PDFFormsFiller from "./index";
 import * as path from 'path';
 
 let formTemplateFilePath = path.join(__dirname, "..", "sample-forms", "FormTemplate.pdf");
