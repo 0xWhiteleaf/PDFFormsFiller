@@ -1,9 +1,9 @@
-import { PDFFormsFiller } from "./pdf-forms-filler";
-import * as path from 'path';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const index_1 = require("./index");
+const path = require("path");
 let formTemplateFilePath = path.join(__dirname, "..", "sample-forms", "FormTemplate.pdf");
 let outputFilePath = path.join(__dirname, "..", "output", "FormFilled.pdf");
-
 let data = {
     "Given Name Text Box": "Eric",
     "Family Name Text Box": "Jones",
@@ -22,15 +22,11 @@ let data = {
     "Language 5 Check Box": true,
     "Gender List Box": "Man"
 };
-
 console.log('FormTemplateFile : ', formTemplateFilePath);
 console.log('OutputFile : ', outputFilePath);
-
-let pdfFormsFiller:PDFFormsFiller = new PDFFormsFiller(formTemplateFilePath, outputFilePath);
+let pdfFormsFiller = new index_1.PDFFormsFiller(formTemplateFilePath, outputFilePath);
 pdfFormsFiller.fillForm(data);
-
 console.log('Done !');
-
 // testing that writer is correctly reopened if needed
 /* data["Given Name Text Box"] = "James";
-pdfFormsFiller.fillForm(data); */
+pdfFormsFiller.fillForm(data); */ 
