@@ -2,7 +2,7 @@ import * as hummus from 'hummus';
 import * as fs from 'fs';
 import * as _ from 'lodash';
 
-export class PDFFormsFiller {
+export default class PDFFormsFiller {
 
     private formTemplatePath: string;
     private outputFilePath: string;
@@ -536,7 +536,7 @@ export class PDFFormsFiller {
         const fieldsReferences = this.writeKidsAndEndObject(handles, parentDict, fields);
 
         // now recreate the fields, filled this time (and down the recursion hole...)
-        fieldsReferences.forEach((fieldReference) => {
+        fieldsReferences.forEach((fieldReference: any) => {
             if (fieldReference.existing) {
                 handles.objectsContext.startModifiedIndirectObject(fieldReference.id);
                 this.writeFilledField(handles, handles.reader.parseNewObject(fieldReference.id).toPDFDictionary(),
