@@ -2,9 +2,9 @@
   "name": "pdf-forms-filler",
   "version": "1.0.0",
   "author": "Noé COMTE",
-  "main": "index.ts",
+  "main": "src/pdf-forms-filler.ts",
   "scripts": {
-    "start": "ts-node srcs/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
     "hummus": "^1.0.87",
