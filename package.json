@@ -1,0 +1,19 @@
+{
+  "name": "pdf-forms-filler",
+  "version": "1.0.0",
+  "author": "Noé COMTE",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node srcs/index.ts"
+  },
+  "dependencies": {
+    "hummus": "^1.0.87",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.108",
+    "@types/node": "^10.1.0",
+    "ts-node": "^6.0.3",
+    "typescript": "^2.8.3"
+  }
+}
